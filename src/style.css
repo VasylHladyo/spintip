@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+}
+
+.spintip-container {
+    width: 100%;
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100vw;
+    height: 108px;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    .spintip-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+    }
+    .header-img {
+        img {
+            width: 100%;
+            max-width: 210px;
+        }
+    }
+    nav {
+        width: 100%;
+        max-width: 695px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+                list-style: none;
+                font-family: "Poppins", sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                color: #FFFFFF;
+                cursor: pointer;
+                &:hover {
+                    color: #D1EB75;
+                }
+                &.active {
+                    color: #D1EB75;
+                }
+            }
+        }
+    }
+    .header-social {
+       width: 100%;
+        max-width: 125px;
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+}
+
+main {
+    .top-banner {
+        height: 1080px;
+        background-image: url("../src/img/AdobeStock_178130386_Preview.png");
+        background-position: center center;
+        background-size: cover;
+        .banner-container {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(23,37,44,1) 95%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .save-time {
+                font-family: "Inter", sans-serif;
+                font-size: 24px;
+                color: #ffffff;
+            }
+            .banner-text {
+                font-family: "Poppins", sans-serif;
+                font-size: 64px;
+                color: #ffffff;
+                line-height: 86px;
+                max-width: 1330px;
+            }
+            .apps-container {
+                margin-top: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                .apps-title {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 32px;
+                    font-weight: 600;
+                    color: #D1F693;
+                    text-transform: uppercase;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .for-players {
+                    margin-right: 35px;
+                }
+
+                .for-coaches,
+                .for-players {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 20px;
+                    span {
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #ffffff;
+                        text-transform: uppercase;
+                    }
+                    img {
+                        width: 203px;
+                        height: 68px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .animation-block {
+                position: relative;
+                height: 150px;
+                overflow: hidden;
+                width: 100%;
+                max-width: 1102px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 50px 0;
+            }
+        }
+    }
+    .enjoy {
+        height: 978px;
+        background: linear-gradient(0deg, rgba(23,37,44,1) 0%, rgba(23,37,44,1) 50%);
+        .gradien-container {
+            width: 100%;
+            height: 100%;
+            background-image: url("../src/img/Mask_group.png");
+            background-position: center center;
+            background-size: cover;
+        }
+        .spintip-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            .enjoy-title {
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-size: 56px;
+                color: #ffffff;
+                span {
+                    color: #D1F693;
+                }
+            }
+            .enjoy-text {
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-size: 32px;
+                color: #D1F693;
+                text-align: center;
+                max-width: 1200px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            .enjoy-variations {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .traditional,
+                .spintip {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    height: 472px;
+                }
+            }
+        }
+    }
+}
+
+.animation-block span {
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 140px;
+    color: #D1F693;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slideUp 6s infinite;
+    transition: all 0.5s ease;
+}
+
+@keyframes slideUp {
+    0%, 20% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    25%, 45% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50%, 100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.animation-block span:nth-child(1) {
+    animation-delay: 0s;
+}
+.animation-block span:nth-child(2) {
+    animation-delay: 1.5s;
+}
+.animation-block span:nth-child(3) {
+    animation-delay: 3s;
+}
